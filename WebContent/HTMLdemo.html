@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>First WebPage</title>
+</head>
+<body>
+	Dine Booking<br>
+	<form 
+		name = "Dine Booking" action="dinebookingsucess.html" method = "post">
+		<br>Visitor Name: <input type="text" id="name" maxlength="20" autofocus><br>
+		Number of members: <input type="number" id="members" max=99 ><br>
+		Contact Number: <input type="tel" id="contactNumber" pattern="[0-9]{10}"><br>
+		Email: <input type="email" id="email" > <br>
+		Type of Food: <input type="checkbox" id="southindian" checked required>South Indian 
+		<input type="checkbox" id="northindian">North Indian
+		<input type="checkbox" id="chinese">Chinese
+		<input type="checkbox" id="western">Western<br>
+		Room Status
+		<input type="radio" id="roomstatus" name="roomstatus" value="AC" checked> AC
+		<input type="radio" name="roomstatus" value="Non-AC"> Non-AC <br>
+		Venue Preference<select id="venue">
+		        <option>--select--</option>
+		        <option>Arena</option>
+		        <option>Fiesta</option>
+		        <option>Vista</option>
+		        <option>Mythri</option>
+		        <option>Magna</option>
+		        <option>Oasis</option>
+		        <option>Amoeba</option>
+		     </select>  <br><br>
+		<button onclick="Book" >Book</button> 
+		<button onclick="Reset" >Reset</button>
+	</form>
+</body>
+</html>
